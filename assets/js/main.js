@@ -103,7 +103,7 @@ if(signupLink){
           // console.log(data);
           if (data.password === password) {
             localStorage.setItem('currentuser',data.username)
-            window.location.href = "../../pages/welcome.html";
+            window.location.href = "smartlogin/pages/welcome.html";
           } else {
             document.querySelector("p.incorrectInputs").classList.remove("d-none");
           }
