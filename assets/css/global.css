@@ -1,0 +1,20 @@
+:root {
+  --bgColor: #24353f;
+  --blueFontColor: #17a2b8;
+  --whiteFontColor: #fff;
+  --grayColor: #a8b6b6;
+  --boxshadowColor: #1d2b33;
+  --yellowColor: #ffc107;
+  --fontFamily: "Titillium Web", sans-serif;
+}
+body {
+  background-color: var(--bgColor);
+  font-family: var(--fontFamily);
+}
+a {
+  color: var(--whiteFontColor);
+  text-decoration: none;
+}
+.boxshadow{
+    box-shadow: 5px 5px 10px 20px var(--boxshadowColor);
+  }

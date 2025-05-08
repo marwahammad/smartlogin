@@ -1,0 +1,31 @@
+@import url('./global.css');
+a:hover{
+  text-decoration: underline;
+}
+h1 {
+  color: var(--blueFontColor);
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.btn-blue{
+  color: var(--blueFontColor);
+  background-color: transparent;
+  border-color: var(--blueFontColor);
+}
+.btn-blue:hover{
+  background-color: var(--blueFontColor);
+  color: var(--whiteFontColor);
+}
+
+.style-input-field{
+  background-color: transparent;
+  border-color: var(--grayColor);
+}
+.style-input-field::placeholder{
+  color: var(--grayColor);
+}
+.style-input-field:focus{
+  background-color: transparent;
+  caret-color: var(--whiteFontColor);
+  box-shadow: none;
+}

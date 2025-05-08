@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.png"
+      type="image/x-icon"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ***** -->
+    <title>Assignment 11 | Login</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section id="login-system">
+        <div class="container d-flex flex-column justify-content-center align-items-center boxshadow mt-5 p-5 w-50">
+          <h1>Smart Login System</h1>
+          <div class="login-user w-100 text-center" id="loginme">
+            <form action="" class="d-flex flex-column gap-3">
+              <input
+                id="useremail"
+                type="email"
+                name="uemail"
+                placeholder="Enter your email"
+                class="form-control style-input-field text-white"
+              />
+              <input
+                type="password"
+                id="userpassword"
+                name="upassword"
+                placeholder="Enter your password"
+                class="form-control style-input-field text-white"
+              />
+              <p class="text-danger d-none requiredInputs">All inputs is required</p>
+              <p class="text-danger d-none incorrectInputs">incorrect email or password</p>
+              <button type="submit" class="btn btn-blue login">Login</button>
+            </form>
+            <p class="text-white mt-2">
+              Don't have an account ? <a href="" target="_self" class="signup-link">Sign Up</a>
+            </p>
+          </div>
+          <div class="signup-user w-100 text-center d-none" id="signmeup">
+            <form action="" class="d-flex flex-column gap-3">
+                <input
+                id="uname"
+                  type="text"
+                  name="uname"
+                  placeholder="Enter your name"
+                  class="form-control style-input-field text-white"
+                />
+                <input
+                id="uemail"
+                  type="email"
+                  name="uemail"
+                  placeholder="Enter your email"
+                  class="form-control style-input-field text-white"
+                />
+                <input
+                id="upassword"
+                  type="password"
+                  name="upassword"
+                  placeholder="Enter your password"
+                  class="form-control style-input-field text-white"
+                />
+                <p class="text-danger d-none required">All inputs is required</p>
+                <p class="text-success d-none success">Success</p>
+                <p class="text-danger d-none invalid">Invalid data</p>
+                <p class="text-danger d-none exists">Email already exists</p>
+                <button type="submit" class="btn btn-blue signup">Sign Up</button>
+              </form>
+              <p class="text-white mt-2">
+                You have an account ? <a href="" target="_self" class="login-link">Signin</a>
+              </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

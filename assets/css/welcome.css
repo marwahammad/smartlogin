@@ -1,0 +1,25 @@
+@import url('./global.css');
+.font-style{
+    color: var(--grayColor);
+}
+.border-style{
+    border: 2px solid var(--yellowColor);
+    border-radius: .3125rem;
+}
+.item-style:hover{
+    background-color: var(--yellowColor);
+}
+.link-style:hover{
+    color: var(--whiteFontColor);
+
+}
+.bottomshadow{
+    box-shadow: 0px 2px 20px var(--boxshadowColor);
+
+}
+.icon-style{
+    color: var(--grayColor);
+}
+.blue-para{
+    color: var(--blueFontColor);
+}
