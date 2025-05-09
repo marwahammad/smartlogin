@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded',()=>{
-
-
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const passwordRegex =
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
@@ -61,6 +59,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
       }
     });
+    clearInputs('signup-form');
+
   }
   
   /* control login & signup form appereance */
@@ -104,6 +104,7 @@ if(signupLink){
           if (data.password === password) {
             localStorage.setItem('currentuser',data.username)
             window.location.href = "https://marwahammad.github.io/smartlogin/pages/welcome.html";
+            // window.location.href = "../../pages/welcome.html";
           } else {
             document.querySelector("p.incorrectInputs").classList.remove("d-none");
           }
@@ -112,8 +113,13 @@ if(signupLink){
         }
       }
     });
+    clearInputs('login-form');
   }
-
-
-  /*  */
 });
+
+/* clear form */
+const clearInputs=(formid)=>{
+const form=document.getElementById(formid);
+const inputs=form.querySelectorAll('input');
+inputs.forEach(input=>input.value='');
+}

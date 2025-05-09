@@ -8,6 +8,7 @@ const logout=document.querySelector('a.logout');
 if(logout){
     logout.addEventListener('click',()=>{
         window.location.href = "https://marwahammad.github.io/smartlogin/index.html";
+        // window.location.href='../../index.html'
         localStorage.removeItem('currentuser');
     })
 }
